@@ -12,7 +12,7 @@ import { IoClose } from 'react-icons/io5'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 
 
-const BASE_URL = "http://localhost:3090";
+const BASE_URL = process.env.BASE_URL || "http://localhost:3090";
 
 function App() {
   const [loading, setLoading] = useState(false)
